@@ -96,6 +96,7 @@ h1 {
 	justify-content: center;
 	margin-top: 95px;
 	width: 100%;
+	overflow: hidden;
 /*	margin-left: 40%;
 	margin-right: 40%;*/
 }
@@ -104,6 +105,13 @@ h1 {
 	width: 136px;
 	height: 65px;
 	background: #4452FE;
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.20000000298023224px;
 }
 .learnButton {
 	margin-left: 2%;
@@ -112,4 +120,26 @@ h1 {
 	width: 136px;
 	height: 65px;
 	background: #181818;
+	font-family: Graphik;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.20000000298023224px;
+}
+.buttonText {
+	display: block;
+	overflow: hidden;
+	height: 45px;
+	width: 56%;
+}
+.screensImg {
+	display: flex;
+	justify-content: center;
+	margin-top: 35px;
+	/*overflow: hidden;*/
+}
+.screensImage {
+	margin-left: 4%;
+	margin-right: 4%;
 }
