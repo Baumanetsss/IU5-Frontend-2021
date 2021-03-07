@@ -1,15 +1,18 @@
 body {
 	background-color: #181818;
+	margin: 0;
 }
 .pageMain {
-
+	width: 100%;
 }
 .topMenu {
 	display: flex;
 	align-items: center;
+	margin-left: 17%;
+	margin-right: 17%;
+	margin-top: 30px;
 }
 .logoImg {
-	margin-left: 17%;
 	width: 186px;
 	height: 58px;
 }
