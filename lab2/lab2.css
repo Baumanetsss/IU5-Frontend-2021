@@ -137,9 +137,11 @@ h1 {
 	display: flex;
 	justify-content: center;
 	margin-top: 35px;
+	margin-left: 4%;
+	margin-right: 4%;
+	background-image: url(/screens.png);
 	/*overflow: hidden;*/
 }
 .screensImage {
-	margin-left: 4%;
-	margin-right: 4%;
+	/*background-size: cover;*/
 }
