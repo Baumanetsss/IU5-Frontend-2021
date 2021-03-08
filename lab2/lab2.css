@@ -398,7 +398,7 @@ h2 {
 	line-height: 62px;
 	letter-spacing: 0.20000000298023224px;
 	text-align: left;
-	margin-top: 12%;
+	/*margin-top: 12%;*/
 	margin-left: 17%;
 }
 .advertisementTryButton {
@@ -427,6 +427,7 @@ h2 {
 .footer {
 	margin-top: 287px;
 	width: 100%;
+	margin-bottom: 7%;
 }
 .footerContainer {
 	margin-left: 17%;
@@ -453,4 +454,5 @@ h2 {
 	letter-spacing: 0.20000000298023224px;
 	text-align: left;
 	margin-top: 19px;
+	white-space: nowrap;
 }
