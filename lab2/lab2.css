@@ -426,7 +426,7 @@ h2 {
 	margin-bottom: 40px;
 	margin-right: 70px;
 }
-.advertisement {
+.advertisementContainer {
 	margin-top: 230px;
 	width: 100%;
 }
@@ -777,7 +777,7 @@ h2 {
 		margin-left: 0px;
 		margin-top: 23px;
 	}
-	.advertisement {
+	.advertisementContainer {
 		display: none;
 	}
 	.mobileAdvertisement {
