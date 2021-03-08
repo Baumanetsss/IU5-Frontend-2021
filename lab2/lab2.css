@@ -12,6 +12,16 @@ h1 {
 	letter-spacing: 0.20000000298023224px;
 	text-align: center;
 }
+h2 {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 62px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: center;
+}
 .pageMain {
 	width: 100%;
 }
@@ -103,7 +113,7 @@ h1 {
 .tryButton {
 	border: 0;
 	width: 136px;
-	height: 65px;
+	padding: 20px 36px;
 	background: #4452FE;
 	color: #ffffff;
 	font-family: Graphik;
@@ -112,13 +122,14 @@ h1 {
 	font-weight: 500;
 	line-height: 25px;
 	letter-spacing: 0.20000000298023224px;
+	white-space: nowrap;
 }
 .learnButton {
 	margin-left: 2%;
 	border: 1px solid #ffffff;
 	color: #ffffff;
 	width: 136px;
-	height: 65px;
+	padding: 20px 36px;
 	background: #181818;
 	font-family: Graphik;
 	font-size: 17px;
@@ -126,12 +137,13 @@ h1 {
 	font-weight: 500;
 	line-height: 25px;
 	letter-spacing: 0.20000000298023224px;
+	white-space: nowrap;
 }
 .buttonText {
 	display: block;
 	overflow: hidden;
-	height: 45px;
-	width: 56%;
+	height: auto;
+	width: 56px;
 }
 .screensImg {
 	display: flex;
@@ -140,8 +152,229 @@ h1 {
 	margin-left: 4%;
 	margin-right: 4%;
 	background-image: url(/screens.png);
-	/*overflow: hidden;*/
 }
-.screensImage {
-	/*background-size: cover;*/
+.flexCenter {
+	margin-top: 160px;
+	display: flex;
+	justify-content: center;
+}
+.chatBotContent {
+	display: flex;
+	margin-top: 80px;
+	margin-left: 17%;
+}
+.lineCharImg {
+	/*position: relative;
+	z-index: 1;
+	left: 37%;
+	top: -250px;*/
+	position: absolute;
+	z-index: 1;
+	left: 37%;
+}
+.chatBotSidebar {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+.chatBotTitle {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.10000000149011612px;
+	text-align: left;
+	margin-left: 13px;
+}
+.chatBotText {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-top: 2%;
+	width: 50%;
+}
+.contents {
+	display: flex;
+	margin-top: 54px;
+	margin-left: 18%;
+	margin-right: 18%;
+	width: 100%;
+}
+.leftCard {
+	width: 30%;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.rightCard {
+	width: 30%;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 2%;
+}
+.cardTitle {
+	color: 000000;
+	font-family: Graphik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.10000000149011612px;
+	text-align: center;
+	margin-top: 10%;
+}
+.cardText {
+	color: #5C5C5C;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: center;
+	margin-top: 6%;
+	margin-left: 22%;
+	margin-right: 22%;
+}
+.galleryFirstRow {
+	display: flex;
+	justify-content: center;
+	margin-top: 54px;
+}
+.gallerySecondRow {
+	display: flex;
+	justify-content: center;
+	margin-top: 44px;
+}
+.galleryImg {
+	border-radius: 10px;
+	margin-left: 2%;
+}
+.seeMoreButton {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	width: 136px;
+	padding: 12px 36px;
+	background: #181818;
+	font-family: Graphik;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.20000000298023224px;
+	white-space: nowrap;
+}
+.partners {
+	display: flex;
+	justify-content: center;
+	margin-top: 61px;
+}
+.partnersLogo {
+	margin-left: 4%;
+}
+.comments {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+	/*margin-left: 22%;
+	margin-right: 22%;*/
+	width: 100%;
+}
+.leftCommentBar {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 27%;
+}
+.rightCommentBar {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 27%;
+	margin-left: 20px;
+	margin-top: -20px;
+}
+.comment {
+	background: #181818;
+	border: 1px solid #DEDEDE;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.profileIcon {
+	height: 50px;
+	width: 50px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.profileTitle {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-left: 23px;
+	margin-top: 40px;
+}
+.profileText {
+	display: block;
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	margin-right: 70px;
+}
+.advertisement {
+	margin-top: 230px;
+	display: flex;
+	justify-content: center;
+	/*margin-left: 11%;
+	margin-right: 11%;
+	border-radius: 33px;
+	background: #343434;
+	overflow: hidden;*/
+	width: 100%;
+}
+.advertisementTable {
+	display: flex;
+	justify-content: center;
+	margin-left: 11%;
+	margin-right: 11%;
+	border-radius: 33px;
+	background: #343434;
+	overflow: hidden;
+}
+.advertisementText {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 52px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 62px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
 }
