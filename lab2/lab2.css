@@ -425,6 +425,11 @@ h2 {
 	margin-top: 230px;
 	width: 100%;
 }
+.mobileAdvertisement {
+	display: none;
+	margin-top: 230px;
+	width: 100%;
+}
 .advertisementTable {
 	display: flex;
 	/*justify-content: center;*/
@@ -512,6 +517,20 @@ h2 {
 	text-align: left;
 	margin-top: 19px;
 	white-space: nowrap;
+}
+.footerColumn {
+	display: flex; 
+	flex-direction: column; 
+	margin-left: 8%;
+}
+.superFooter {
+	display: flex; 
+	flex-direction: column; 
+	margin-left: 20%;
+}
+.footerMap {
+	margin-top: 13px; 
+	margin-left: 5%;
 }
 @media screen and (max-width: 768px) {
 	.topMenuButtonFirst {
@@ -736,63 +755,61 @@ h2 {
 	}
 	.comments {
 		flex-direction: column;
-		margin-left: 18%;
-		margin-right: 18%;
+		align-items: center;
 		width: 100%;
+		margin-top: 0;
 	}
-.leftCommentBar {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 27%;
-}
-.rightCommentBar {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 27%;
-	margin-left: 20px;
-	margin-top: -20px;
-}
-.comment {
-	background: #181818;
-	border: 1px solid #DEDEDE;
-	box-sizing: border-box;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-}
-.profileIcon {
-	height: 50px;
-	width: 50px;
-	margin-top: 40px;
-	margin-left: 40px;
-}
-.profileTitle {
-	color: #ffffff;
-	font-family: Graphik;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0.20000000298023224px;
-	text-align: left;
-	margin-left: 23px;
-	margin-top: 40px;
-}
-.profileText {
-	display: block;
-	color: #ffffff;
-	font-family: Graphik;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.20000000298023224px;
-	text-align: left;
-	margin-top: 30px;
-	margin-left: 40px;
-	margin-bottom: 40px;
-	margin-right: 70px;
-}	
+	.leftCommentBar {
+		width: 64%;
+	}
+	.rightCommentBar {
+		width: 64%;
+		margin-left: 0px;
+		margin-top: 23px;
+	}
+	.advertisement {
+		display: none;
+	}
+	.mobileAdvertisement {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #1E1E1E;
+		width: 100%;
+		margin-top: 151px;
+		justify-content: center;
+	}
+	.advertisementText {
+		margin-top: 104px;
+		text-align: center;
+		width: 70%;
+		margin-left: 0;
+	}
+	.advertisementTryButton {
+		margin-left: 0;
+	}
+	.footer {
+		margin-top: 208px;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.footerContainer {
+		margin-left: 17%;
+		margin-top: 17%;
+		display: flex;
+		flex-direction: column;
+	}
+	.footerColumn {
+		margin-left: 0;
+		margin-top: 75px;
+	}
+	.superFooter {
+		margin-top: 78px;
+		margin-left: 0;
+		margin-bottom: 30%;
+	}
+	.footerMap {
+		margin-top: 13px; 
+		margin-left: 3%;
+	}
 }
