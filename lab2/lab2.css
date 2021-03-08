@@ -78,6 +78,9 @@ h2 {
 	height: 52px;
 	width: 148px;
 }
+.topMenuRight {
+	display: none;
+}
 .headline {
 	display: flex;
 	justify-content: center;
@@ -455,4 +458,30 @@ h2 {
 	text-align: left;
 	margin-top: 19px;
 	white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+	.topMenuButtonFirst {
+		display: none;
+	}
+	.topMenuButton {
+		display: none;
+	}
+	.topMenu {
+		/*width: 100%;*/
+	}
+	.topMenu {
+		width: 100%;
+	}
+	.logoImg {
+		margin-left: 6%;
+	}
+	.topMenuLogin {
+		margin-left: 15%;
+	}
+	.topMenuRight {
+		display: block;
+		height: 53px;
+		width: 66px;
+		margin-right: 3%;
+	}
 }
