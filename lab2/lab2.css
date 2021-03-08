@@ -1,3 +1,4 @@
+@import url("./fonts/stylesheet.css");
 body {
 	background-color: #181818;
 	margin: 0;
@@ -87,7 +88,7 @@ h2 {
 .subHeadline {
 	display: flex;
 	justify-content: center;
-	margin-top: 27px;
+	margin-top: 10px;
 	margin-left: 31%;
 	margin-right: 31%;
 }
@@ -168,9 +169,24 @@ h2 {
 	z-index: 1;
 	left: 37%;
 	top: -250px;*/
-	position: absolute;
+	/*position: absolute;
 	z-index: 1;
-	left: 37%;
+	right: 0;
+	bottom: 0;*/
+	position: relative;
+	/*height: 759px;*/
+}
+.chatBotImg {
+	position: relative;
+	margin: 0px 4%;
+	top: 0;
+	left: 0;
+}
+.lineChartImg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
 }
 .chatBotSidebar {
 	display: flex;
@@ -350,23 +366,28 @@ h2 {
 }
 .advertisement {
 	margin-top: 230px;
-	display: flex;
-	justify-content: center;
-	/*margin-left: 11%;
-	margin-right: 11%;
-	border-radius: 33px;
-	background: #343434;
-	overflow: hidden;*/
 	width: 100%;
 }
 .advertisementTable {
 	display: flex;
-	justify-content: center;
+	/*justify-content: center;*/
 	margin-left: 11%;
 	margin-right: 11%;
 	border-radius: 33px;
 	background: #343434;
 	overflow: hidden;
+}
+.advertisementTableLeft {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.advertisementTableRight {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 .advertisementText {
 	color: #ffffff;
@@ -377,4 +398,59 @@ h2 {
 	line-height: 62px;
 	letter-spacing: 0.20000000298023224px;
 	text-align: left;
+	margin-top: 12%;
+	margin-left: 17%;
+}
+.advertisementTryButton {
+	border: 0;
+	width: 190px;
+	height: 52px;
+	padding: 10px 70px;
+	background: #4452FE;
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.20000000298023224px;
+	white-space: nowrap;
+	margin-left: 15%;
+	margin-top: 37px;
+}
+.advertisementButtonText {
+	display: block;
+	overflow: hidden;
+	height: auto;
+	width: 85px;
+}
+.footer {
+	margin-top: 287px;
+	width: 100%;
+}
+.footerContainer {
+	margin-left: 17%;
+	margin-top: 17%;
+	display: flex;
+}
+.footerTitle {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.10000000149011612px;
+	text-align: left;
+}
+.footerText {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-top: 19px;
 }
