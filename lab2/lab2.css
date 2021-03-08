@@ -346,6 +346,18 @@ h2 {
 .mobilePartnersSecondRow {
 
 }
+.basecampSVG {
+	height: 60px; 
+	width: 72px;
+}
+.airbnbSVG {
+	height: 64px; 
+	width: 60px;
+}
+.ibmSVG {
+	height: 60px; 
+	width: 150px;"
+}
 .comments {
 	display: flex;
 	justify-content: center;
@@ -693,6 +705,7 @@ h2 {
 		align-items: center;
 		flex-direction: column;
 		height: 172px;
+		width: 100%;
 	}
 	.mobilePartnersFirstRow {
 		display: flex;
@@ -706,4 +719,80 @@ h2 {
 		align-items: center;
 		width: 50%;
 	}
+	.basecampSVG {
+		height: 46px; 
+		width: 56px;
+	}
+	.airbnbSVG {
+		height: 51px; 
+		width: 47px;
+	}
+	.ibmSVG {
+		height: 33px; 
+		width: 83px;"
+	}
+	.partnersLogo {
+    	margin-left: 0;
+	}
+	.comments {
+		flex-direction: column;
+		margin-left: 18%;
+		margin-right: 18%;
+		width: 100%;
+	}
+.leftCommentBar {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 27%;
+}
+.rightCommentBar {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 27%;
+	margin-left: 20px;
+	margin-top: -20px;
+}
+.comment {
+	background: #181818;
+	border: 1px solid #DEDEDE;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.profileIcon {
+	height: 50px;
+	width: 50px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.profileTitle {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-left: 23px;
+	margin-top: 40px;
+}
+.profileText {
+	display: block;
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-top: 30px;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	margin-right: 70px;
+}	
 }
