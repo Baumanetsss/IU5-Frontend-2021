@@ -2,6 +2,7 @@
 body {
 	background-color: #181818;
 	margin: 0;
+	width: 100%;
 }
 h1 {
 	color: #ffffff;
@@ -111,8 +112,6 @@ h2 {
 	margin-top: 95px;
 	width: 100%;
 	overflow: hidden;
-/*	margin-left: 40%;
-	margin-right: 40%;*/
 }
 .tryButton {
 	border: 0;
@@ -470,10 +469,13 @@ h2 {
 		/*width: 100%;*/
 	}
 	.topMenu {
-		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
 	}
 	.logoImg {
 		margin-left: 6%;
+		height: 58px;
+		width: 186px;
 	}
 	.topMenuLogin {
 		margin-left: 15%;
@@ -483,5 +485,99 @@ h2 {
 		height: 53px;
 		width: 66px;
 		margin-right: 3%;
+		margin-left: 3%;
 	}
+	h1 {
+		font-size: 52px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 62px;
+		letter-spacing: 0.20000000298023224px;
+	}
+	.headline {
+		margin-top: 91px;
+		margin-left: 23%;
+		margin-right: 23%;
+	}
+	.commonText {
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: 0.20000000298023224px;
+	}
+	.subHeadline {
+		/*margin-top: 27px;*/
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	.tryLearnButtons {
+		flex-direction: column;
+		margin-top: 67px;
+		overflow: hidden;
+		margin-left: 37%;
+		margin-right: 37%;
+	}
+	.learnButton {
+		margin-top: 21px;
+		margin-left: 0;
+	}
+	.screensImg {
+		margin-top: 55px;
+		margin-left: 0%;
+		margin-right: 0%;
+		background-image: url(/screens.png);
+		width: 100%;
+		height: 453px;
+		overflow: hidden;
+	}
+	h2 {
+		font-size: 52px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 62px;
+		letter-spacing: 0.20000000298023224px;
+		text-align: left;
+	}
+	.chatBotContent {
+		margin-top: 28px;
+		margin-left: 0;
+	}
+	.lineCharImg {
+		width: 100%;
+		position: relative;
+		margin-left: 21%;
+		margin-right: 21%;
+	}
+	.chatBotImg {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 58%;
+	}
+	.lineChartImg {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+	.chatBotSidebar {
+		flex-direction: column;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+.chatBotTitle {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 0.10000000149011612px;
+	text-align: left;
+	margin-left: 13px;
+}
 }
