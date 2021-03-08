@@ -229,23 +229,28 @@ h2 {
 	margin-top: 2%;
 	width: 50%;
 }
+.contentsWrapper {
+	display: flex;
+	justify-content: center;
+}
 .contents {
 	display: flex;
+	justify-content: space-between;
 	margin-top: 54px;
-	margin-left: 18%;
-	margin-right: 18%;
-	width: 100%;
+	/*margin-left: 18%;
+	margin-right: 18%;*/
+	width: 64%;
 }
 .leftCard {
-	width: 30%;
+	width: 47%;
 	background-color: #ffffff;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/*justify-content: center;*/
 }
 .rightCard {
-	width: 30%;
+	width: 47%;
 	background-color: #ffffff;
 	border-radius: 10px;
 	display: flex;
@@ -338,7 +343,7 @@ h2 {
 	margin-left: 4%;
 }
 .mobilePartners {
-
+	display: none;
 }
 .mobilePartnersFirstRow {
 
@@ -587,6 +592,7 @@ h2 {
 	}
 	.tryLearnButtons {
 		flex-direction: column;
+		width: auto;
 		margin-top: 67px;
 		overflow: hidden;
 		margin-left: 37%;
@@ -718,6 +724,9 @@ h2 {
 		margin-left: 20%;
 		margin-right: 20%;
 	}
+	.partners {
+		display: none;
+	}
 	.mobilePartners {
 		display: flex;
 		justify-content: space-between;
@@ -725,6 +734,7 @@ h2 {
 		flex-direction: column;
 		height: 172px;
 		width: 100%;
+		margin-top: 65px;
 	}
 	.mobilePartnersFirstRow {
 		display: flex;
