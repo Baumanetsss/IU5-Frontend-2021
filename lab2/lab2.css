@@ -37,19 +37,35 @@ h2 {
 .pageMain {
 	width: 100%;
 }
+.page1 {
+	width: 100%;
+}
+.top {
+	display: flex;
+	justify-content: center;
+}
 .topMenu {
+	width: 64%;
 	display: flex;
 	align-items: center;
-	margin-left: 17%;
-	margin-right: 17%;
+	justify-content: space-between;
+	/*margin-left: 17%;
+	margin-right: 17%;*/
 	margin-top: 30px;
 }
 .logoImg {
 	width: 186px;
 	height: 58px;
+	/*margin-left: 18%;*/
+}
+.topMenuButtons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
 }
 .topMenuButtonFirst {
-	margin-left: 13%;
+	/*margin-left: 13%;*/
 	color: #ffffff;
 	border: 0;
 	background: #181818;
@@ -62,7 +78,7 @@ h2 {
 	text-align: center;
 }
 .topMenuButton {
-	padding-left: 5%;
+	/*padding-left: 5%;*/
 	color: #ffffff;
 	border: 0;
 	background: #181818;
@@ -75,7 +91,8 @@ h2 {
 	text-align: center;
 }
 .topMenuLogin {
-	margin-left: 16%;
+	/*margin-left: 16%;
+	float: right;*/
 	color: #ffffff;
 	border: 1px solid #ffffff;
 	background: #181818;
@@ -162,9 +179,8 @@ h2 {
 	display: flex;
 	justify-content: center;
 	margin-top: 35px;
-	margin-left: 4%;
-	margin-right: 4%;
-	background-image: url(/screens.png);
+	width: 100%;
+	/*background-image: url(/screens.png);*/
 }
 .flexCenter {
 	margin-top: 160px;
@@ -174,9 +190,11 @@ h2 {
 .chatBotContent {
 	display: flex;
 	margin-top: 80px;
-	margin-left: 17%;
+	width: 69%;
+	justify-content: space-between;
+	height: 100%;
 }
-.lineCharImg {
+.frame19 {
 	/*position: relative;
 	z-index: 1;
 	left: 37%;
@@ -185,14 +203,13 @@ h2 {
 	z-index: 1;
 	right: 0;
 	bottom: 0;*/
-	position: relative;
+	/*position: relative;*/
 	/*height: 759px;*/
+	display: flex;
+	width: 69%;
 }
 .chatBotImg {
-	position: relative;
-	margin: 0px 4%;
-	top: 0;
-	left: 0;
+	width: 100%;
 }
 .lineChartImg {
 	position: absolute;
@@ -203,8 +220,11 @@ h2 {
 .chatBotSidebar {
 	display: flex;
 	flex-direction: column;
-	margin-left: 5%;
-	margin-top: 5%;
+	width: 25%;
+	justify-content: space-evenly;
+	/*height: 100%;*/
+	/*margin-left: 5%;*/
+	/*margin-top: 5%;*/
 }
 .chatBotTitle {
 	color: #ffffff;
@@ -227,7 +247,7 @@ h2 {
 	letter-spacing: 0.20000000298023224px;
 	text-align: left;
 	margin-top: 2%;
-	width: 50%;
+	width: 
 }
 .contentsWrapper {
 	display: flex;
@@ -247,7 +267,9 @@ h2 {
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
 	/*justify-content: center;*/
+	height: 626px;
 }
 .rightCard {
 	width: 47%;
@@ -255,8 +277,9 @@ h2 {
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	margin-left: 2%;
+	height: 626px;
 }
 .cardTitle {
 	color: 000000;
@@ -285,40 +308,47 @@ h2 {
 .macbook {
 	display: flex; 
 	justify-content: center; 
-	margin-top: 12%; 
-	margin-bottom: 7%;
+/*	margin-top: 12%; 
+	margin-bottom: 7%;*/
+	width: 100%;
 }
 .macbookImg {
-
+	width: 90%;
 }
 .boardsNotifications {
 	display: flex; 
 	justify-content: center; 
-	margin-top: 7%; 
-	margin-bottom: 7%;
+	/*margin-top: 7%; 
+	margin-bottom: 7%;*/
+	width: 100%;
 }
 .boardsNotificationsImg {
-
+	width: 90%;
 }
 .gallery {
-
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 }
 .mobileGallery {
 	display: none;
 }
 .galleryFirstRow {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	width: 64%;
 	margin-top: 54px;
 }
 .gallerySecondRow {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	width: 69%;
 	margin-top: 44px;
 }
 .galleryImg {
 	border-radius: 10px;
-	margin-left: 2%;
+	width: 22%;
 }
 .seeMoreButton {
 	border: 1px solid #ffffff;
@@ -492,14 +522,16 @@ h2 {
 	width: 85px;
 }
 .footer {
-	margin-top: 287px;
 	width: 100%;
 	margin-bottom: 7%;
+	display: flex;
+	justify-content: center;
 }
 .footerContainer {
-	margin-left: 17%;
 	margin-top: 17%;
 	display: flex;
+	justify-content: space-between;
+	width: 66%;
 }
 .footerTitle {
 	color: #ffffff;
@@ -526,7 +558,6 @@ h2 {
 .footerColumn {
 	display: flex; 
 	flex-direction: column; 
-	margin-left: 8%;
 }
 .superFooter {
 	display: flex; 
@@ -537,7 +568,7 @@ h2 {
 	margin-top: 13px; 
 	margin-left: 5%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 	.topMenuButtonFirst {
 		display: none;
 	}
@@ -822,4 +853,28 @@ h2 {
 		margin-top: 13px; 
 		margin-left: 3%;
 	}
+}
+@media screen and (max-width: 1200px) {
+	.footerTitle {
+		color: #ffffff;
+		font-family: Graphik;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 30px;
+		letter-spacing: 0.10000000149011612px;
+		text-align: left;
+	}
+.footerText {
+	color: #ffffff;
+	font-family: Graphik;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.20000000298023224px;
+	text-align: left;
+	margin-top: 19px;
+	white-space: nowrap;
+}
 }
