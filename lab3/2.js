@@ -10,7 +10,7 @@
 function getMinMax(str) {
     let min = str[0];
     let max = min;
-    for (i = 1; i < str.length; ++i) {
+    for (let i = 1; i < str.length; ++i) {
         if (str[i] > max) max = str[i];
         if (str[i] < min) min = str[i];
     }
