@@ -12,8 +12,8 @@ function getMinMax(str) {
     let minimum = strArray[0];
     let maximum = minimum;
     for (let i = 1; i < strArray.length; i++) {
-        if (strArray[i] > maximum) maximum = strArray[i];
-        if (strArray[i] < minimum) minimum = strArray[i];
+        if (Number(strArray[i]) > maximum) maximum = Number(strArray[i]);
+        if (Number(strArray[i]) < minimum) minimum = Number(strArray[i]);
     }
     let result = {min: minimum, max: maximum}; 
     return result;
