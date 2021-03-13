@@ -7,18 +7,11 @@
  */
 function capitalize(str) {
     if (!str) return str;
-    String.prototype.firstLetterCaps = function() {
-        return this.charAt(0).toUpperCase() + this.slice(1);
+    str.toLowerCase().split(" ");
+    for (let i = 0; i < words.length; i++) {
+        str[i][0].toUpperCase();
     }
-      let arr = str.split(' ')
-    let out = ''
-    for (let i = 0; i < arr.length; i++) {
-        if (i == arr.length - 1) {
-        out += arr[i].firstLetterCaps()
-        } else {
-        out += arr[i].firstLetterCaps() + ' '
-        }
-    }
+    return str.join(" ");
 }
 
 module.exports = capitalize;

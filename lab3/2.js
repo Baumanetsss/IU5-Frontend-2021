@@ -8,13 +8,13 @@
  * '4 и -6, 2, 1, может 9, 63, -134 и 566]' -> {min: -134, max: 566}
  */
 function getMinMax(str) {
-    let min = str[0];
-    let max = min;
-    for (let i = 1; i < str.length; ++i) {
-        if (str[i] > max) max = str[i];
-        if (str[i] < min) min = str[i];
+    let minimum = str[0];
+    let maximum = minimum;
+    for (let i = 1; i < str.length; i++) {
+        if (str[i] > maximum) maximum = str[i];
+        if (str[i] < minimum) minimum = str[i];
     }
-    let result = {min: min, max: max}; 
+    let result = {min: minimum, max: maximum}; 
     return result;
 }
 
