@@ -12,7 +12,7 @@ function capitalize(str) {
     for (let i = 0; i < str.length; i++) {
         strResult += str[i][0].toUpperCase() + str[i].slice(1) + " ";
     }
-    return strResult.slice(-1);
+    return strResult.slice(0, -1);
 }
 
 module.exports = capitalize;
