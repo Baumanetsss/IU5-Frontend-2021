@@ -8,11 +8,11 @@
 function capitalize(str) {
     if (!str) return str;
     str = str.toLowerCase().split(" ");
+    strResult = "";
     for (let i = 0; i < str.length; i++) {
-        str[i][0] = str[i][0].toUpperCase();
+        strResult += str[i][0].toUpperCase() + str[i].slice(1) + " ";
     }
-    str = str.join(" ");
-    return str;
+    return strResult;
 }
 
 module.exports = capitalize;

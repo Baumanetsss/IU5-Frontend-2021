@@ -12,6 +12,7 @@ function multiplyArray(arr, n) {
         if (Number.isInteger(arr[i]) == true)
             arr[i] = arr[i] * n;
     }
+    return arr;
 }
 
 module.exports = multiplyArray;

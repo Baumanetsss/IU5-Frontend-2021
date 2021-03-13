@@ -13,7 +13,8 @@ function prettySum(arr) {
         if (i % 2 == 0)
             sum += arr[i];
     }
-    return sum * arr[arr.length-1];
+    let result = sum * arr[arr.length-1];
+    return result;
 }
 
 module.exports = prettySum;
