@@ -9,7 +9,7 @@
  */
 function getMinMax(str) {
     strArray = str.match(/[\d-.]{1,10000000}/g);
-    let minimum = strArray[0];
+    let minimum = Number(strArray[0]);
     let maximum = minimum;
     for (let i = 1; i < strArray.length; i++) {
         if (Number(strArray[i]) > maximum) maximum = Number(strArray[i]);
