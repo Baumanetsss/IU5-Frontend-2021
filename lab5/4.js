@@ -14,23 +14,21 @@
  */
 
 function memoize(func) {
-    //const memozedAdd = () => {
-        let cache = {};
-        return (n) => {
-          if (n in cache) {
-            return cache[n];
-          }
+    let cache = {};
+        return (a) => {
+          if (a in cache) {
+            return cache[a];
+          }        
           else {
-            let result = n + 10;
-            cache[n] = result;
+            let result = func(a);
+            cache[a] = result;
             return result;
           }
         }
-    }
-//}
+}
 // const add = (a) => a * 2;
 // const memozedAdd = memoize(add);
-// memozedAdd(1) //-> {cache: false, result: 2}
+// console.log(memozedAdd(1)) //-> {cache: false, result: 2}    
 // memozedAdd(1) //-> {cache: true, result: 2}
 // memozedAdd(2) //-> {cache: false, result: 4}
 // memozedAdd(1) //-> {cache: false, result: 2}
