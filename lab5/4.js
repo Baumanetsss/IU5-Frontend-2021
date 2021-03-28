@@ -15,20 +15,19 @@
 
 function memoize(func) {
     let cache = {};
-        return (a) => {
-          if (a in cache) {
-            return cache[a];
-          }        
-          else {
-            let result = func(a);
-            cache[a] = result;
-            return result;
-          }
+    return (a) => {
+        if (cache === func(a)) { 
+            cache = func(a); 
+            return {cache: true, result: func(a)} 
+        } else {
+            cache = func(a); 
+            return {cache: false, result: func(a)}
         }
+    }
 }
-// const add = (a) => a * 2;
-// const memozedAdd = memoize(add);
-// console.log(memozedAdd(1)) //-> {cache: false, result: 2}    
+const add = (a) => a * 2;
+const memozedAdd = memoize(add);
+console.log(memozedAdd(1)) //-> {cache: false, result: 2}    
 // memozedAdd(1) //-> {cache: true, result: 2}
 // memozedAdd(2) //-> {cache: false, result: 4}
 // memozedAdd(1) //-> {cache: false, result: 2}
