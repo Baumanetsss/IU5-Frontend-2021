@@ -14,7 +14,27 @@
  */
 
 function memoize(func) {
-    //code here
-}
+    //const memozedAdd = () => {
+        let cache = {};
+        return (n) => {
+          if (n in cache) {
+            return cache[n];
+          }
+          else {
+            let result = n + 10;
+            cache[n] = result;
+            return result;
+          }
+        }
+    }
+//}
+// const add = (a) => a * 2;
+// const memozedAdd = memoize(add);
+// memozedAdd(1) //-> {cache: false, result: 2}
+// memozedAdd(1) //-> {cache: true, result: 2}
+// memozedAdd(2) //-> {cache: false, result: 4}
+// memozedAdd(1) //-> {cache: false, result: 2}
+// memozedAdd(2) //-> {cache: false, result: 4}
+// memozedAdd(2) //-> {cache: true, result: 4}
 
 module.exports = memoize;
