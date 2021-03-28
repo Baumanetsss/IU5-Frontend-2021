@@ -6,3 +6,14 @@
  * [1,2,3].myMap((x) => x*2) -> [2,4,6]
  * Нужно назвать myMap !!!!!
  */
+Array.prototype.myMap = function(callback) {
+    return this.reduce(function(result, current) {
+        result.push(callback(current));
+        //console.log(result);
+        //console.log(current);
+        return result;
+    }, []);
+}
+//test = [1,2,3]
+//console.log(test.myMap((x) => x*2));
+//console.log(test.myMap((x) => x*10));
