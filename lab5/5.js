@@ -36,14 +36,4 @@ function makeRoute(arr) {
     }
     return arr
 }
-// test = 
-// [
-//     { from: 'L', to: 'M' },
-//     { from: 'M', to: 'N' },
-//     { from: 'A', to: 'L' },
-//     { from: 'B', to: 'A' },
-//     { from: 'N', to: 'Z' }, //LMNABZ
-// ];
-// console.log(makeRoute(test))
-// makeRoute(test)
 module.exports = makeRoute;

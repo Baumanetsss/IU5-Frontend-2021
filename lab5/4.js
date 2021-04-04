@@ -24,14 +24,5 @@ function memoize(func) {
             return {cache: false, result: func(a)}
         }
     }
-}
-const add = (a) => a * 2;
-const memozedAdd = memoize(add);
-console.log(memozedAdd(1)) //-> {cache: false, result: 2}    
-// memozedAdd(1) //-> {cache: true, result: 2}
-// memozedAdd(2) //-> {cache: false, result: 4}
-// memozedAdd(1) //-> {cache: false, result: 2}
-// memozedAdd(2) //-> {cache: false, result: 4}
-// memozedAdd(2) //-> {cache: true, result: 4}
-
+}   
 module.exports = memoize;
