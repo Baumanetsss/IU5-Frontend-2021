@@ -5,11 +5,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab 6</title>
 </head>
 
 <body>
-
+    <div style="display: flex; justify-content: center;">
+        <div id="square" style="display: flex; align-items: center; width: 250px; height: 250px; border: 1px solid black">
+        </div>
+        <script>
+            var divRandomColor = document.getElementById('square');
+            divRandomColor.onclick = function() {
+                this.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+            };
+        </script>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+        <div id="timer" style="display: flex; align-items: center; justify-content: center; width: 250px; height: 250px; border: 1px solid black">
+            <span>0</span>
+        </div>
+        <script>
+            var counter = 0;
+            document.getElementById('timer').onmouseover=function(){a();};
+            function a(){
+                counter++;
+                document.getElementById("timer").innerHTML = counter;
+                timerId = setTimeout(a,1000);
+            }
+            document.getElementById('timer').onmouseout = function() {
+                clearTimeout(timerId);
+            }
+        </script>
+    </div>
+    <style>
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #2980B9;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #ddd}
+        .show {display:block;}
+    </style>
+    <div style="display: flex; justify-content: center; margin-top: 50px;">
+        <div id="list" style="display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;">
+            <div class="dropdown" style="overflow-y: auto; overflow-x:hidden; height: 150px;">
+                <button onclick="myFunction()" class="dropbtn">Choose Faculty</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="http://iu.bmstu.ru/">IU</a>
+                  <a href="http://sm.bmstu.ru/">SM</a>
+                  <a href="http://sm.bmstu.ru/">MT</a>
+                  <a href="http://sm.bmstu.ru/">E</a>
+                  <a href="http://sm.bmstu.ru/">BMT</a>
+                  <a href="http://sm.bmstu.ru/">SGN</a>
+                  <a href="http://sm.bmstu.ru/">YUR</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+    </div>
+    <style>
+        #box {
+            position: relative;
+            width: 800px; 
+            height: 800px; 
+            border: 1px solid black
+        }
+        #circle {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+    </style>
+    <div style="display: flex; justify-content: center;">
+        <div id="box">
+            <div id="circle"></div>
+        </div>
+        <script>
+            let flag = false; 
+            const circle = document.getElementById('circle');
+            const box = document.getElementById('box');
+            circle.addEventListener('click', function() { 
+                flag = true; 
+            });
+            window.addEventListener('keyup', function(event) {
+                if (event.key == 'Escape')
+                    flag = false;
+            })
+            window.addEventListener('mousemove', (event) => {
+                if (flag) {
+                    let x = event.pageX - box.offsetLeft - circle.offsetWidth / 2;
+                    let y = event.pageY - box.offsetTop - circle.offsetHeight / 2;
+                    let borderHorizontal = box.offsetWidth - circle.offsetWidth - 4.5;
+                    let borderVertical = box.offsetHeight - circle.offsetHeight - 4.5;
+                    if (x < 0) {
+                        x = 0;
+                    }
+                    if (y < 0) {
+                        y = 0;
+                    }
+                    if (x > borderHorizontal) {
+                        x = borderHorizontal;
+                    }
+                    if (y > borderVertical) {
+                        y = borderVertical;
+                    }
+                    circle.style.left = x + 'px';
+                    circle.style.top = y + 'px';
+                }
+            })
+        </script>
+    </div>
 </body>
-
 </html>
